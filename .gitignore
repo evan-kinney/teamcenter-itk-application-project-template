@@ -1,0 +1,5 @@
+# Visual Studio Project ignores
+bin/
+obj/
+x64/
+.vs/

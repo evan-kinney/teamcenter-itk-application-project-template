@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Teamcenter ITK Application</Name>
+    <Description>A project for creating a command-line application for Teamcenter using ITK</Description>
+    <Icon>Template.ico</Icon>
+    <ProjectType>VC</ProjectType>
+    <LanguageTag>cpp</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <ProjectTypeTag>console</ProjectTypeTag>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <TemplateID>5dccab13-1a1c-4768-a9f0-2388c28f9bb9</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>teamcenter_itk_application_1</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.vcxproj" ReplaceParameters="true">
+      <ProjectItem TargetFileName="$safeprojectname$.vcxproj.filters" ReplaceParameters="true">ProjectTemplate.vcxproj.filters</ProjectItem>
+      <ProjectItem TargetFileName="$safeprojectname$.cpp" ReplaceParameters="true" OpenInEditor="true">ProjectTemplate.cpp</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

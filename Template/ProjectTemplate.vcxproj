@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ProjectTemplate.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c17a8c9d-b297-4ca7-9011-c66c6bcb7c70}</ProjectGuid>
+    <RootNamespace>Teamcenter_ITK_Application___Template_Project</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <ProjectName>$safeprojectname$</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$safeprojectname$</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$safeprojectname$</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>false</VcpkgEnableManifest>
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile />
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>wsock32.lib;msvcrt.lib;oldnames.lib;winmm.lib;xerces322_X_19.lib;delayimp.lib;itk_main.obj;libsyss.lib;libpom.lib;libtcsso.lib;libae.lib;libappr.lib;libarchive.lib;libbackup.lib;libbom.lib;libcfm.lib;libconstants.lib;libcxpom.lib;libdmi.lib;libecm.lib;libeint.lib;libepm.lib;libfclasses.lib;libform.lib;libgms.lib;libgrm.lib;libtcinit.lib;libtc.lib;libtccore.lib;libFnd0FastenerMgmt.lib;libFnd0FastenerMgmtBvr.lib;libtctrushape.lib;libinternal_exits.lib;libvalidation.lib;libitk.lib;liblov.lib;libme.lib;libmgc.lib;libobjio.lib;libpie.lib;libai.lib;libproperty.lib;libwproxy.lib;libps.lib;libpublication.lib;libqry.lib;libclips.lib;libclipsutil.lib;librbf.lib;libce.lib;libres.lib;libsa.lib;libss.lib;libstep.lib;libsub_mgr.lib;libtextsrv.lib;libibom.lib;libtrv.lib;libtie.lib;libnxmgr_im.lib;libaie.lib;libics.lib;libeintstub.lib;libsml.lib;libuser_exits.lib;librdv.lib;libcollabctx.lib;libmechatronics.lib;libtccoreext.lib;libusagewc.lib;libusage.lib;libcontmgmt.lib;libtc_utils.lib;libschmgt.lib;libschmgt_bridge.lib;libsmengine.lib;libsmanalytics.lib;libdocmgt.lib;libdocmgtapp.lib;libvm.lib;libadsfoundationdispatch.lib;libcm.lib;libcmdispatch.lib;libbase_utils.lib;libfoundationbase.lib;libmld.lib;libfunctionality.lib;libmfg.lib;libmfgbvr.lib;libnls.lib;libcondvalidation.lib;libbooleanmath.lib;libconfigurator.lib;libfnd0booleansolve.lib;libsecore.lib;libdispatcher.lib;libFnd0formulamgmt.lib;libFnd0audit_mgr.lib;libxformer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(TC_ROOT)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>libtcsso.dll;libae.dll;libappr.dll;libarchive.dll;libbackup.dll;libbom.dll;libcfm.dll;libconstants.dll;libdmi.dll;libecm.dll;libeint.dll;libepm.dll;libform.dll;libgms.dll;libgrm.dll;libtccore.dll;libFnd0FastenerMgmt.dll;libFnd0FastenerMgmtBvr.dll;libtctrushape.dll;libinternal_exits.dll;libvalidation.dll;libitk.dll;liblov.dll;libme.dll;libmgc.dll;libobjio.dll;libpie.dll;libai.dll;libwproxy.dll;libps.dll;libpublication.dll;libqry.dll;libclips.dll;libclipsutil.dll;librbf.dll;libce.dll;libres.dll;libstep.dll;libsub_mgr.dll;libibom.dll;libtrv.dll;libtie.dll;libnxmgr_im.dll;libaie.dll;libics.dll;libeintstub.dll;libsml.dll;libuser_exits.dll;librdv.dll;libcollabctx.dll;libmechatronics.dll;libtccoreext.dll;libusagewc.dll;libusage.dll;libcontmgmt.dll;libtc_utils.dll;libschmgt.dll;libschmgt_bridge.dll;libsmengine.dll;libsmanalytics.dll;libdocmgt.dll;libdocmgtapp.dll;libvm.dll;libadsfoundationdispatch.dll;libcm.dll;libcmdispatch.dll;libbase_utils.dll;libfoundationbase.dll;libmld.dll;libfunctionality.dll;libFnd0formulamgmt.dll;libFnd0audit_mgr.dll;libxformer.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <ClCompile>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(TC_ROOT)\include;$(TC_ROOT)\include_cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PreprocessorDefinitions>STEP;AP203;AP214;WIN32_LEAN_AND_MEAN;WNT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SECURE_SCL=0;_HAS_TR1=0;_WIN32;WIN32;_WIN64;_INTEL=1;CRTAPI1=_cdecl;CRTAPI2=cdecl;IMAN_TAO;BYPASS_FLEX;POMDLL;IPLIB=none;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile />
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>wsock32.lib;msvcrt.lib;oldnames.lib;winmm.lib;xerces322_X_19.lib;delayimp.lib;itk_main.obj;libsyss.lib;libpom.lib;libtcsso.lib;libae.lib;libappr.lib;libarchive.lib;libbackup.lib;libbom.lib;libcfm.lib;libconstants.lib;libcxpom.lib;libdmi.lib;libecm.lib;libeint.lib;libepm.lib;libfclasses.lib;libform.lib;libgms.lib;libgrm.lib;libtcinit.lib;libtc.lib;libtccore.lib;libFnd0FastenerMgmt.lib;libFnd0FastenerMgmtBvr.lib;libtctrushape.lib;libinternal_exits.lib;libvalidation.lib;libitk.lib;liblov.lib;libme.lib;libmgc.lib;libobjio.lib;libpie.lib;libai.lib;libproperty.lib;libwproxy.lib;libps.lib;libpublication.lib;libqry.lib;libclips.lib;libclipsutil.lib;librbf.lib;libce.lib;libres.lib;libsa.lib;libss.lib;libstep.lib;libsub_mgr.lib;libtextsrv.lib;libibom.lib;libtrv.lib;libtie.lib;libnxmgr_im.lib;libaie.lib;libics.lib;libeintstub.lib;libsml.lib;libuser_exits.lib;librdv.lib;libcollabctx.lib;libmechatronics.lib;libtccoreext.lib;libusagewc.lib;libusage.lib;libcontmgmt.lib;libtc_utils.lib;libschmgt.lib;libschmgt_bridge.lib;libsmengine.lib;libsmanalytics.lib;libdocmgt.lib;libdocmgtapp.lib;libvm.lib;libadsfoundationdispatch.lib;libcm.lib;libcmdispatch.lib;libbase_utils.lib;libfoundationbase.lib;libmld.lib;libfunctionality.lib;libmfg.lib;libmfgbvr.lib;libnls.lib;libcondvalidation.lib;libbooleanmath.lib;libconfigurator.lib;libfnd0booleansolve.lib;libsecore.lib;libdispatcher.lib;libFnd0formulamgmt.lib;libFnd0audit_mgr.lib;libxformer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(TC_ROOT)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>libtcsso.dll;libae.dll;libappr.dll;libarchive.dll;libbackup.dll;libbom.dll;libcfm.dll;libconstants.dll;libdmi.dll;libecm.dll;libeint.dll;libepm.dll;libform.dll;libgms.dll;libgrm.dll;libtccore.dll;libFnd0FastenerMgmt.dll;libFnd0FastenerMgmtBvr.dll;libtctrushape.dll;libinternal_exits.dll;libvalidation.dll;libitk.dll;liblov.dll;libme.dll;libmgc.dll;libobjio.dll;libpie.dll;libai.dll;libwproxy.dll;libps.dll;libpublication.dll;libqry.dll;libclips.dll;libclipsutil.dll;librbf.dll;libce.dll;libres.dll;libstep.dll;libsub_mgr.dll;libibom.dll;libtrv.dll;libtie.dll;libnxmgr_im.dll;libaie.dll;libics.dll;libeintstub.dll;libsml.dll;libuser_exits.dll;librdv.dll;libcollabctx.dll;libmechatronics.dll;libtccoreext.dll;libusagewc.dll;libusage.dll;libcontmgmt.dll;libtc_utils.dll;libschmgt.dll;libschmgt_bridge.dll;libsmengine.dll;libsmanalytics.dll;libdocmgt.dll;libdocmgtapp.dll;libvm.dll;libadsfoundationdispatch.dll;libcm.dll;libcmdispatch.dll;libbase_utils.dll;libfoundationbase.dll;libmld.dll;libfunctionality.dll;libFnd0formulamgmt.dll;libFnd0audit_mgr.dll;libxformer.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PostBuildEvent>
+    <ClCompile />
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <ClCompile>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(TC_ROOT)\include;$(TC_ROOT)\include_cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PreprocessorDefinitions>STEP;AP203;AP214;WIN32_LEAN_AND_MEAN;WNT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SECURE_SCL=0;_HAS_TR1=0;_WIN32;WIN32;_WIN64;_INTEL=1;CRTAPI1=_cdecl;CRTAPI2=cdecl;IMAN_TAO;BYPASS_FLEX;POMDLL;IPLIB=none;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
